@@ -1,0 +1,205 @@
+/* Start CSS grid for Dashboard */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #d996f391;
+}
+
+.container{
+    display: grid;
+    position: relative;
+    margin: auto;
+    grid-template-rows: repeat(5);
+    grid-template-columns: repeat(5, 275px);
+    grid-gap: 10px;
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+}
+
+/* Header */
+
+header{
+    grid-area: 1 / 2 / 2 / 6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    transform: scale(0.6);
+    vertical-align: middle;
+}
+
+/* Welcome Section */
+
+.welcome{
+    grid-area: 2 / 2 / 3 / 6;
+    border: #d996f3 2px solid;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Level */
+
+.level{
+    color: gray;
+    text-align: center;    
+}
+
+#novice{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Navigation Bar */
+
+nav{
+    grid-area: 1 / 1 / 6 / 1;
+    background-color: black;
+    color: white;
+}
+
+nav h2{
+    text-align: center;
+    color: rgb(217, 150, 243);
+}
+
+nav li{
+    list-style-type: none;
+    text-align: left;
+    padding: 10px;   
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: darkslategray;
+}
+
+ul a:hover{
+    color: darkslategray;
+}
+
+.end-nav{
+    /* float: bottom; */
+    text-align: center;
+    padding-top: 15rem;
+    padding-bottom: 1rem;
+}
+
+.number{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    transform: scale(0.4);
+    float: bottom;
+}
+
+/* Projects Section */
+
+.projects{
+    grid-area: 3 / 2 / 4 / 6;
+    border: #d996f3 2px;
+    border-radius: 20px;
+
+}
+
+.project-box{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.project-box span{
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.box{
+    border: 2px gray;
+    padding: 5px;
+    text-align: center;
+    border: #d996f3 2px solid;
+    border-radius: 20px;
+    width: 14rem;
+    height: 5rem;
+    color: gray;
+    background-color: white;
+    font-weight: bold;
+}
+
+/* Calendar Section */
+
+.calendar{
+    grid-area: 4  / 2 / 6 / 4;
+    background-color: white;
+    border: #d996f3 2px solid;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.calendar span {
+    color: gray;
+    font-size: 12px;
+}
+
+.calendar a {
+    float: right;
+    font-size: 15px;
+}
+
+button{
+    text-transform: uppercase;
+    border-radius: 30px;
+    background-color: aqua;
+    float:right;
+}
+
+/* Projects Section Next to Calendar */
+
+.current{
+    grid-area: 4  / 4 / 6 / 6;
+    background-color: white;
+    border: #d996f3 2px solid;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.under {
+    font-size: 10px;
+}
+
+.current span {
+    color: gray;
+    font-size: 12px;
+    float: right;
+}
+
+.current a {
+    float: right;
+    font-size: 15px;
+}
+
+/* Google Calendar */
+
+.google-calendar{
+    /* align-self: center; */
+    float: bottom;
+}
