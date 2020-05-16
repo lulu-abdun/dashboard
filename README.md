@@ -1,1 +1,1 @@
-Created a dashboard to display my projects that I have done or am working on in my web programming course.
+Welcome to my dashboard! It displays projects that I have done and/or worked on in while taking a web programming course from September to December 2019.
